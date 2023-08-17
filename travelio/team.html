@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Team</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-umbrella-beach"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="burger" onclick="toggle()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </nav>
+    <div class="nav-links-mobile">
+      <ul class="nav-links-mobile-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="branding">
+        <div class="element center">
+          <img src="./assets/teamGroup.jpg" alt="beach" />
+        </div>
+        <div class="element find-more">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            corporis reprehenderit, odit dolores officiis consequatur atque
+            pariatur eligendi repudiandae nulla.
+          </p>
+          <button class="pretty-button">Find out More</button>
+        </div>
+      </div>
+
+      <div class="team-content">
+        <h1>Team</h1>
+        <div class="cards">
+          <div class="team-card">
+            <div class="team-card-container">
+              <img src="./assets/person1.jpg" alt="Product 1" />
+            </div>
+            <h2>Jean Doe</h2>
+            <p class="price">Chief Executive Officer</p>
+            <p>jean@example.com</p>
+            <div class="contact-icons">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <!-- <button class="card-button">Find out More</button> -->
+          </div>
+  
+          <div class="team-card">
+            <div class="team-card-container">
+              <img src="./assets/person2.jpg" alt="Product 2" />
+            </div>
+           
+            <h2>John Smith</h2>
+            <p class="price">Graphic Designer</p>
+            <p>john@example.com</p>
+            <div class="contact-icons">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+  
+          <div class="team-card">
+            <div class="team-card-container">
+              <img src="./assets/person3.jpg" alt="Product 3" />
+            </div>
+            
+            <h2>Joane McCarter</h2>
+            <p class="price">Web Developer</p>
+            <p>joane@example.com</p>
+            <div class="contact-icons">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+  
+          <div class="team-card">
+            <div class="team-card-container">
+              <img src="./assets/person4.jpg" alt="Product 4" />
+            </div>
+            
+            <h2>Payton Davis</h2>
+            <p class="price">Chief Product Manager</p>
+            <p>payton@example.com</p>
+            <div class="contact-icons">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggle() {
+        var x = document.getElementsByClassName("nav-links-mobile");
+        console.log(x[0])
+        if (x[0].style.display === "none") {
+          x[0].style.display = "block";
+        } else {
+          x[0].style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
